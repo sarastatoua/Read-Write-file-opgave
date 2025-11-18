@@ -1,7 +1,12 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-    body 
+include head
+h1 Welcome to my folders
+p1 Choose a folder :D
+ul 
+    each element in elements
+        li
+            a(href=`/${currentDir}/${element}`) #{element}
+
+            //- anchor tag tager fat i den nuværende directory, som blev angivet inde i app. Efrter '/' angiver det element, som der er.
+            //- Elementet er de forskellige filer og foldere der er i den nuværende directory.
+
+
